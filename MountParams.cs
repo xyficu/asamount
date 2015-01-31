@@ -24,6 +24,7 @@ namespace ASAMount
             st = "";
             ut = "";
             date = "";
+            stat = 0;
         }
         public string ra;
         public string dec;
@@ -40,5 +41,7 @@ namespace ASAMount
         public bool isSlewing;
         public bool isHomed;
         public bool isParked;
+        public int stat;
+
     }
 }

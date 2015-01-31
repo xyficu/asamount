@@ -100,6 +100,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(184, 24);
             this.exitToolStripMenuItem.Text = "&Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -165,9 +166,9 @@
             this.label6.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label6.Location = new System.Drawing.Point(213, 57);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(72, 16);
+            this.label6.Size = new System.Drawing.Size(32, 16);
             this.label6.TabIndex = 6;
-            this.label6.Text = "Azimuth:";
+            this.label6.Text = "Az:";
             // 
             // label111
             // 
@@ -175,16 +176,16 @@
             this.label111.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label111.Location = new System.Drawing.Point(205, 86);
             this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(80, 16);
+            this.label111.Size = new System.Drawing.Size(40, 16);
             this.label111.TabIndex = 7;
-            this.label111.Text = "Altitude:";
+            this.label111.Text = "Alt:";
             // 
             // labelMountAz
             // 
             this.labelMountAz.AutoSize = true;
             this.labelMountAz.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.labelMountAz.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelMountAz.Location = new System.Drawing.Point(290, 57);
+            this.labelMountAz.Location = new System.Drawing.Point(252, 57);
             this.labelMountAz.Name = "labelMountAz";
             this.labelMountAz.Size = new System.Drawing.Size(98, 18);
             this.labelMountAz.TabIndex = 8;
@@ -195,7 +196,7 @@
             this.labelMountAlt.AutoSize = true;
             this.labelMountAlt.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.labelMountAlt.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelMountAlt.Location = new System.Drawing.Point(290, 86);
+            this.labelMountAlt.Location = new System.Drawing.Point(252, 86);
             this.labelMountAlt.Name = "labelMountAlt";
             this.labelMountAlt.Size = new System.Drawing.Size(90, 18);
             this.labelMountAlt.TabIndex = 9;
@@ -222,7 +223,7 @@
             this.groupBox1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.groupBox1.Location = new System.Drawing.Point(12, 42);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(573, 127);
+            this.groupBox1.Size = new System.Drawing.Size(553, 127);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Mount Information";
@@ -232,7 +233,7 @@
             this.labelMountST.AutoSize = true;
             this.labelMountST.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.labelMountST.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelMountST.Location = new System.Drawing.Point(465, 86);
+            this.labelMountST.Location = new System.Drawing.Point(427, 86);
             this.labelMountST.Name = "labelMountST";
             this.labelMountST.Size = new System.Drawing.Size(90, 18);
             this.labelMountST.TabIndex = 16;
@@ -254,7 +255,7 @@
             this.labelMountUT.AutoSize = true;
             this.labelMountUT.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.labelMountUT.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelMountUT.Location = new System.Drawing.Point(465, 57);
+            this.labelMountUT.Location = new System.Drawing.Point(427, 57);
             this.labelMountUT.Name = "labelMountUT";
             this.labelMountUT.Size = new System.Drawing.Size(90, 18);
             this.labelMountUT.TabIndex = 14;
@@ -264,7 +265,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label17.Location = new System.Drawing.Point(427, 86);
+            this.label17.Location = new System.Drawing.Point(389, 86);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(32, 16);
             this.label17.TabIndex = 13;
@@ -274,7 +275,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label16.Location = new System.Drawing.Point(427, 57);
+            this.label16.Location = new System.Drawing.Point(389, 57);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(32, 16);
             this.label16.TabIndex = 12;
@@ -285,7 +286,7 @@
             this.labelMountDate.AutoSize = true;
             this.labelMountDate.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.labelMountDate.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelMountDate.Location = new System.Drawing.Point(465, 28);
+            this.labelMountDate.Location = new System.Drawing.Point(427, 28);
             this.labelMountDate.Name = "labelMountDate";
             this.labelMountDate.Size = new System.Drawing.Size(90, 18);
             this.labelMountDate.TabIndex = 11;
@@ -295,7 +296,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label14.Location = new System.Drawing.Point(411, 28);
+            this.label14.Location = new System.Drawing.Point(373, 28);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(48, 16);
             this.label14.TabIndex = 10;
@@ -314,11 +315,10 @@
             this.groupBox2.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.groupBox2.Location = new System.Drawing.Point(12, 177);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(573, 209);
+            this.groupBox2.Size = new System.Drawing.Size(553, 209);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Control";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // textBoxTargetDEC
             // 
@@ -436,6 +436,7 @@
             this.MaximizeBox = false;
             this.Name = "FormAsaMount";
             this.Text = "ASA Mount Controller";
+            this.Load += new System.EventHandler(this.FormAsaMount_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);

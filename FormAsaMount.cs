@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace ASAMount
 {
@@ -13,22 +14,43 @@ namespace ASAMount
     {
 
         MountUser mountUser;
+        Thread mntThd;
 
+        // 自定义望远镜状态字
+        /** 望远镜状态字
+         * 0  : 初始状态, 断开连接
+         * 1  : 静止
+         * 2  : 搜索零点中
+         * 3  : 搜索零点成功
+         * 4  : 指向中
+         * 5  : 跟踪中
+         * 6  : 轴控制中
+         * 7  : 复位中
+         * 8  : 复位
+         **/
+        private const int TS_NONE = 0;
+        private const int TS_Stopped = 1;
+        private const int TS_Homing = 2;
+        private const int TS_Homed = 3;
+        private const int TS_Slewing = 4;
+        private const int TS_Tracking = 5;
+        private const int TS_Moving = 6;
+        private const int TS_Parking = 7;
+        private const int TS_Parked = 8;
+        
         public FormAsaMount()
         {
             InitializeComponent();
+
             mountUser = new MountUser();
             timerMntUpdateStat.Interval = 100;
             timerMntUpdateStat.Enabled = true;
             
+
+
         }
 
         private void connectMountToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            mountUser.ConnectDevice();
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
         {
             mountUser.ConnectDevice();
         }
@@ -50,7 +72,9 @@ namespace ASAMount
 
         private void buttonMountPark_Click(object sender, EventArgs e)
         {
-            mountUser.Park();
+            mntThd = new Thread(new ThreadStart(mountUser.Park));
+            mntThd.IsBackground = true;
+            mntThd.Start();
         }
 
         private void timerMntUpdateStat_Tick(object sender, EventArgs e)
@@ -58,10 +82,10 @@ namespace ASAMount
             //赤经、赤纬、方位角、高度角
             string curRa = "", curDec = "", curAz = "", curAlt = "";
             string curDate = "", curUT = "", curST = "";
+            int stat = 0;
             bool isTracking = false, isMoving = false, isHomed = false, isParked = false;
             mountUser.GetAllStat(ref curRa, ref curDec, ref curAz, ref curAlt,
-                                ref isTracking, ref isMoving, ref isHomed, ref isParked,
-                                ref curDate, ref curUT, ref curST);
+                                ref curDate, ref curUT, ref curST, ref stat);
             labelMountRA.Text = curRa;
             labelMountDEC.Text = curDec;
             labelMountAz.Text = curAz;
@@ -70,7 +94,7 @@ namespace ASAMount
             labelMountDate.Text = curDate;
             labelMountUT.Text = curUT;
             labelMountST.Text = curST;
-
+            
             //连接状态
             switch (mountUser.GetLink())
             {
@@ -84,6 +108,44 @@ namespace ASAMount
                     labelMountDrvStat.ForeColor = Color.Red;
                     break;
             }
+
+            //移动状态
+            switch (stat)
+            {
+                case TS_Stopped:
+                    labelMountStat.Text = "Stopped";
+                    break;
+                case TS_Homing:
+                    labelMountStat.Text = "Homing";
+                    break;
+                case TS_Homed:
+                    labelMountStat.Text = "Homed";
+                    break;
+                case TS_Slewing:
+                    labelMountStat.Text = "Slewing";
+                    break;
+                case TS_Tracking:
+                    labelMountStat.Text = "Tracking";
+                    break;
+                case TS_Parking:
+                    labelMountStat.Text = "Parking";
+                    break;
+                case TS_Parked:
+                    labelMountStat.Text = "Parked";
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void FormAsaMount_Load(object sender, EventArgs e)
+        {
+            mountUser.ConnectDevice();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
 
