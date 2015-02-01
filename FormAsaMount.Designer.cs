@@ -75,7 +75,7 @@
             this.aboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(601, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(584, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -111,30 +111,30 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Location = new System.Drawing.Point(17, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 16);
+            this.label1.Size = new System.Drawing.Size(56, 14);
             this.label1.TabIndex = 1;
             this.label1.Text = "Status:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(49, 57);
+            this.label2.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.Location = new System.Drawing.Point(45, 57);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 16);
+            this.label2.Size = new System.Drawing.Size(28, 14);
             this.label2.TabIndex = 2;
             this.label2.Text = "RA:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(41, 86);
+            this.label3.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.Location = new System.Drawing.Point(38, 86);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 16);
+            this.label3.Size = new System.Drawing.Size(35, 14);
             this.label3.TabIndex = 3;
             this.label3.Text = "DEC:";
             // 
@@ -142,10 +142,10 @@
             // 
             this.labelMountRA.AutoSize = true;
             this.labelMountRA.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelMountRA.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelMountRA.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelMountRA.Location = new System.Drawing.Point(86, 57);
             this.labelMountRA.Name = "labelMountRA";
-            this.labelMountRA.Size = new System.Drawing.Size(98, 18);
+            this.labelMountRA.Size = new System.Drawing.Size(86, 16);
             this.labelMountRA.TabIndex = 4;
             this.labelMountRA.Text = "00:00:00.00";
             // 
@@ -153,30 +153,30 @@
             // 
             this.labelMountDEC.AutoSize = true;
             this.labelMountDEC.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelMountDEC.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelMountDEC.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelMountDEC.Location = new System.Drawing.Point(86, 86);
             this.labelMountDEC.Name = "labelMountDEC";
-            this.labelMountDEC.Size = new System.Drawing.Size(98, 18);
+            this.labelMountDEC.Size = new System.Drawing.Size(86, 16);
             this.labelMountDEC.TabIndex = 5;
             this.labelMountDEC.Text = "+00:00:00.0";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label6.Location = new System.Drawing.Point(213, 57);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(32, 16);
+            this.label6.Size = new System.Drawing.Size(28, 14);
             this.label6.TabIndex = 6;
             this.label6.Text = "Az:";
             // 
             // label111
             // 
             this.label111.AutoSize = true;
-            this.label111.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label111.Location = new System.Drawing.Point(205, 86);
+            this.label111.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label111.Location = new System.Drawing.Point(206, 86);
             this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(40, 16);
+            this.label111.Size = new System.Drawing.Size(35, 14);
             this.label111.TabIndex = 7;
             this.label111.Text = "Alt:";
             // 
@@ -184,10 +184,10 @@
             // 
             this.labelMountAz.AutoSize = true;
             this.labelMountAz.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelMountAz.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelMountAz.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelMountAz.Location = new System.Drawing.Point(252, 57);
             this.labelMountAz.Name = "labelMountAz";
-            this.labelMountAz.Size = new System.Drawing.Size(98, 18);
+            this.labelMountAz.Size = new System.Drawing.Size(86, 16);
             this.labelMountAz.TabIndex = 8;
             this.labelMountAz.Text = "000:00:00.0";
             // 
@@ -195,10 +195,10 @@
             // 
             this.labelMountAlt.AutoSize = true;
             this.labelMountAlt.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelMountAlt.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelMountAlt.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelMountAlt.Location = new System.Drawing.Point(252, 86);
             this.labelMountAlt.Name = "labelMountAlt";
-            this.labelMountAlt.Size = new System.Drawing.Size(90, 18);
+            this.labelMountAlt.Size = new System.Drawing.Size(79, 16);
             this.labelMountAlt.TabIndex = 9;
             this.labelMountAlt.Text = "00:00:00.0";
             // 
@@ -232,10 +232,10 @@
             // 
             this.labelMountST.AutoSize = true;
             this.labelMountST.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelMountST.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelMountST.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelMountST.Location = new System.Drawing.Point(427, 86);
             this.labelMountST.Name = "labelMountST";
-            this.labelMountST.Size = new System.Drawing.Size(90, 18);
+            this.labelMountST.Size = new System.Drawing.Size(79, 16);
             this.labelMountST.TabIndex = 16;
             this.labelMountST.Text = "00:00:00.0";
             // 
@@ -243,10 +243,10 @@
             // 
             this.labelMountStat.AutoSize = true;
             this.labelMountStat.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelMountStat.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelMountStat.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelMountStat.Location = new System.Drawing.Point(86, 28);
             this.labelMountStat.Name = "labelMountStat";
-            this.labelMountStat.Size = new System.Drawing.Size(66, 18);
+            this.labelMountStat.Size = new System.Drawing.Size(58, 16);
             this.labelMountStat.TabIndex = 15;
             this.labelMountStat.Text = "Stopped";
             // 
@@ -254,30 +254,30 @@
             // 
             this.labelMountUT.AutoSize = true;
             this.labelMountUT.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelMountUT.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelMountUT.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelMountUT.Location = new System.Drawing.Point(427, 57);
             this.labelMountUT.Name = "labelMountUT";
-            this.labelMountUT.Size = new System.Drawing.Size(90, 18);
+            this.labelMountUT.Size = new System.Drawing.Size(79, 16);
             this.labelMountUT.TabIndex = 14;
             this.labelMountUT.Text = "00:00:00.0";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label17.Location = new System.Drawing.Point(389, 86);
+            this.label17.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label17.Location = new System.Drawing.Point(387, 86);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(32, 16);
+            this.label17.Size = new System.Drawing.Size(28, 14);
             this.label17.TabIndex = 13;
             this.label17.Text = "ST:";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label16.Location = new System.Drawing.Point(389, 57);
+            this.label16.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label16.Location = new System.Drawing.Point(387, 57);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(32, 16);
+            this.label16.Size = new System.Drawing.Size(28, 14);
             this.label16.TabIndex = 12;
             this.label16.Text = "UT:";
             // 
@@ -285,20 +285,20 @@
             // 
             this.labelMountDate.AutoSize = true;
             this.labelMountDate.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelMountDate.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelMountDate.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelMountDate.Location = new System.Drawing.Point(427, 28);
             this.labelMountDate.Name = "labelMountDate";
-            this.labelMountDate.Size = new System.Drawing.Size(90, 18);
+            this.labelMountDate.Size = new System.Drawing.Size(79, 16);
             this.labelMountDate.TabIndex = 11;
             this.labelMountDate.Text = "2015-01-30";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label14.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label14.Location = new System.Drawing.Point(373, 28);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(48, 16);
+            this.label14.Size = new System.Drawing.Size(42, 14);
             this.label14.TabIndex = 10;
             this.label14.Text = "Date:";
             // 
@@ -315,33 +315,32 @@
             this.groupBox2.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.groupBox2.Location = new System.Drawing.Point(12, 177);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(553, 209);
+            this.groupBox2.Size = new System.Drawing.Size(553, 119);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Control";
             // 
             // textBoxTargetDEC
             // 
-            this.textBoxTargetDEC.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBoxTargetDEC.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textBoxTargetDEC.Location = new System.Drawing.Point(84, 63);
             this.textBoxTargetDEC.Name = "textBoxTargetDEC";
-            this.textBoxTargetDEC.Size = new System.Drawing.Size(154, 26);
+            this.textBoxTargetDEC.Size = new System.Drawing.Size(154, 23);
             this.textBoxTargetDEC.TabIndex = 9;
             this.textBoxTargetDEC.Text = "+00:00:00.0";
             // 
             // textBoxTargetRA
             // 
-            this.textBoxTargetRA.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBoxTargetRA.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textBoxTargetRA.Location = new System.Drawing.Point(84, 28);
             this.textBoxTargetRA.Name = "textBoxTargetRA";
-            this.textBoxTargetRA.Size = new System.Drawing.Size(154, 26);
+            this.textBoxTargetRA.Size = new System.Drawing.Size(154, 23);
             this.textBoxTargetRA.TabIndex = 8;
             this.textBoxTargetRA.Text = "00:00:00.00";
             // 
             // buttonMountPark
             // 
-            this.buttonMountPark.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMountPark.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonMountPark.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.buttonMountPark.Location = new System.Drawing.Point(357, 64);
             this.buttonMountPark.Name = "buttonMountPark";
             this.buttonMountPark.Size = new System.Drawing.Size(85, 31);
@@ -352,8 +351,7 @@
             // 
             // buttonMountHome
             // 
-            this.buttonMountHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMountHome.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonMountHome.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.buttonMountHome.Location = new System.Drawing.Point(357, 22);
             this.buttonMountHome.Name = "buttonMountHome";
             this.buttonMountHome.Size = new System.Drawing.Size(85, 31);
@@ -364,8 +362,7 @@
             // 
             // buttonMountStop
             // 
-            this.buttonMountStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMountStop.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonMountStop.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.buttonMountStop.ForeColor = System.Drawing.Color.Red;
             this.buttonMountStop.Location = new System.Drawing.Point(264, 64);
             this.buttonMountStop.Name = "buttonMountStop";
@@ -377,8 +374,7 @@
             // 
             // buttonMountSlew
             // 
-            this.buttonMountSlew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMountSlew.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonMountSlew.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.buttonMountSlew.ForeColor = System.Drawing.Color.LimeGreen;
             this.buttonMountSlew.Location = new System.Drawing.Point(264, 22);
             this.buttonMountSlew.Name = "buttonMountSlew";
@@ -391,20 +387,20 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label11.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label11.Location = new System.Drawing.Point(30, 64);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(40, 16);
+            this.label11.Size = new System.Drawing.Size(35, 14);
             this.label11.TabIndex = 1;
             this.label11.Text = "DEC:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label10.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label10.Location = new System.Drawing.Point(38, 34);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(32, 16);
+            this.label10.Size = new System.Drawing.Size(28, 14);
             this.label10.TabIndex = 0;
             this.label10.Text = "RA:";
             // 
@@ -412,7 +408,7 @@
             // 
             this.labelMountDrvStat.AutoSize = true;
             this.labelMountDrvStat.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelMountDrvStat.Location = new System.Drawing.Point(32, 410);
+            this.labelMountDrvStat.Location = new System.Drawing.Point(12, 321);
             this.labelMountDrvStat.Name = "labelMountDrvStat";
             this.labelMountDrvStat.Size = new System.Drawing.Size(217, 14);
             this.labelMountDrvStat.TabIndex = 12;
@@ -427,7 +423,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(601, 445);
+            this.ClientSize = new System.Drawing.Size(584, 346);
             this.Controls.Add(this.labelMountDrvStat);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -436,6 +432,7 @@
             this.MaximizeBox = false;
             this.Name = "FormAsaMount";
             this.Text = "ASA Mount Controller";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormAsaMount_FormClosing);
             this.Load += new System.EventHandler(this.FormAsaMount_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

@@ -52,6 +52,20 @@ namespace ASAMount
             
         }
 
+        ~MountUser()
+        {
+
+        }
+
+        public void Disconnect()
+        {
+            if (m_telescope != null && m_mountParams.connected == true)
+            {
+                m_telescope.Connected = false;
+            }
+            
+        }
+
         //连接转台
         public void ConnectDevice()
         {

@@ -13,9 +13,6 @@ namespace ASAMount
     public partial class FormAsaMount : Form
     {
 
-        MountUser mountUser;
-        Thread mntThd;
-
         // 自定义望远镜状态字
         /** 望远镜状态字
          * 0  : 初始状态, 断开连接
@@ -37,7 +34,11 @@ namespace ASAMount
         private const int TS_Moving = 6;
         private const int TS_Parking = 7;
         private const int TS_Parked = 8;
-        
+
+        MountUser mountUser;
+        MountNet mountNet;
+        Thread mntNetThd;
+
         public FormAsaMount()
         {
             InitializeComponent();
@@ -45,8 +46,12 @@ namespace ASAMount
             mountUser = new MountUser();
             timerMntUpdateStat.Interval = 100;
             timerMntUpdateStat.Enabled = true;
-            
 
+            //connect to host
+            mountNet = new MountNet(mountUser);
+            mntNetThd = new Thread(new ThreadStart(mountNet.ConnectToHost));
+            mntNetThd.IsBackground = true;
+            mntNetThd.Start();
 
         }
 
@@ -72,9 +77,8 @@ namespace ASAMount
 
         private void buttonMountPark_Click(object sender, EventArgs e)
         {
-            mntThd = new Thread(new ThreadStart(mountUser.Park));
-            mntThd.IsBackground = true;
-            mntThd.Start();
+            labelMountStat.Text = "Parking...";
+            mountUser.Park();
         }
 
         private void timerMntUpdateStat_Tick(object sender, EventArgs e)
@@ -83,7 +87,6 @@ namespace ASAMount
             string curRa = "", curDec = "", curAz = "", curAlt = "";
             string curDate = "", curUT = "", curST = "";
             int stat = 0;
-            bool isTracking = false, isMoving = false, isHomed = false, isParked = false;
             mountUser.GetAllStat(ref curRa, ref curDec, ref curAz, ref curAlt,
                                 ref curDate, ref curUT, ref curST, ref stat);
             labelMountRA.Text = curRa;
@@ -116,19 +119,19 @@ namespace ASAMount
                     labelMountStat.Text = "Stopped";
                     break;
                 case TS_Homing:
-                    labelMountStat.Text = "Homing";
+                    labelMountStat.Text = "Homing...";
                     break;
                 case TS_Homed:
                     labelMountStat.Text = "Homed";
                     break;
                 case TS_Slewing:
-                    labelMountStat.Text = "Slewing";
+                    labelMountStat.Text = "Slewing...";
                     break;
                 case TS_Tracking:
-                    labelMountStat.Text = "Tracking";
+                    labelMountStat.Text = "Tracking...";
                     break;
                 case TS_Parking:
-                    labelMountStat.Text = "Parking";
+                    labelMountStat.Text = "Parking...";
                     break;
                 case TS_Parked:
                     labelMountStat.Text = "Parked";
@@ -145,7 +148,15 @@ namespace ASAMount
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            mountUser.Disconnect();
             this.Close();
+        }
+
+        private void FormAsaMount_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+            mountUser.Disconnect();
+
         }
 
 
