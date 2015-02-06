@@ -72,6 +72,7 @@ namespace ASAMount
                 {
                     Console.WriteLine("try to connect to host ...");
                     m_sktDev.Connect(m_ep);
+                    
                     m_connected = true;
                     //连接成功后发送注册消息
                     SendMessage("MOUNT");
@@ -102,7 +103,13 @@ namespace ASAMount
             }
             catch (System.Exception ex)
             {
+                
                 Console.Write("send message error: " + ex.Message);
+                m_sktDev.Close();
+                m_sktDev = new Socket(AddressFamily.InterNetwork, SocketType.Stream,
+                                        ProtocolType.IP);
+                m_connected = false;
+                ConnectToHost();
             }
 
         }
