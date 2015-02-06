@@ -55,6 +55,11 @@ namespace ASAMount
 
         }
 
+        ~FormAsaMount()
+        {
+            
+        }
+
         private void connectMountToolStripMenuItem_Click(object sender, EventArgs e)
         {
             mountUser.ConnectDevice();

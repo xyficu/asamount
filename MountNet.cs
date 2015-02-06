@@ -27,14 +27,9 @@ namespace ASAMount
             m_errMsg = "";
             m_connected = false;
 
-            //启动消息接收线程
-            Thread thd = new Thread(new ThreadStart(ReceiveMessage));
-            thd.IsBackground = true;
-            thd.Start();
-
             //启动housekeeping线程
             m_timerHousekeep = new Timer(new TimerCallback(HouseKeeping), null, 0, 10000);
-            m_timerHousekeep.Change(0, 10000);
+            //m_timerHousekeep.Change(0, 10000);
         }
 
         ~MountNet()
@@ -76,6 +71,11 @@ namespace ASAMount
                     m_connected = true;
                     //连接成功后发送注册消息
                     SendMessage("MOUNT");
+
+                    //连接成功后启动消息接收线程
+                    Thread thd = new Thread(new ThreadStart(ReceiveMessage));
+                    thd.IsBackground = true;
+                    thd.Start();
 
                 }
 
@@ -133,7 +133,7 @@ namespace ASAMount
             {
                 m_errMsg = ex.Message;
                 Console.WriteLine("resolve message error: " + ex.Message);
-                ReceiveMessage();
+                //ReceiveMessage();
             }
         }
 
